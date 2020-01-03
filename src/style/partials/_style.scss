@@ -20,7 +20,7 @@ input {
 }
 
 .subtitle {
-  color: #008ed6;
+  color: $blue;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -60,11 +60,14 @@ input {
   align-items: center;
   justify-content: center;
   &--theme_blue {
-    background: #008ed6;
+    background: $blue;
   }
   &--theme_transparent {
     border: 1px solid #434348;
     margin-left: 20px;
+  }
+  &:hover {
+    color: #fff;
   }
 }
 
@@ -104,6 +107,18 @@ header {
                     background: url(../img/line.png);
                     height: 3px;
                     width: 42px;
+                    background-position: center;
+                    margin: 7px auto 0;
+                  }
+                }
+                &:hover {
+                  text-decoration: none;
+                  &:after {
+                    content: '';
+                    display: block;
+                    background: url(../img/line.png);
+                    height: 3px;
+                    width: 40px;
                     background-position: center;
                     margin: 7px auto 0;
                   }
@@ -393,7 +408,7 @@ section.price {
     &-button {
       padding: 30px;
       a {
-        color: #008ed6;
+        color: $blue;
         font-weight: 600;
         border-color: #e0e0e0;
         margin: 0 auto;
@@ -424,10 +439,10 @@ section.price {
     }
     &.active {
       .price__item-title {
-        color: #008ed6;
+        color: $blue;
       }
       .price__item-price {
-        background: #008ed6;
+        background: $blue;
         color: #fff;
         span {
           color: #fff
@@ -435,7 +450,7 @@ section.price {
       }
       .price__item-button {
         a {
-          background: #008ed6;
+          background: $blue;
           color: #fff;
         }
       }
@@ -502,7 +517,7 @@ section#map {
   height: 370px;
 }
 
-footer {
+footer.footer {
   height: 160px;
   background: #15141a;
   text-align: center;
