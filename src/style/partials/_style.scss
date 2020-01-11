@@ -15,6 +15,10 @@ input {
   height: 50px;
 }
 
+textarea {
+  resize: none;
+}
+
 .container {
   padding: 0;
 }
@@ -59,15 +63,25 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background .3s;
   &--theme_blue {
     background: $blue;
+    &:hover {
+      background: transparent;
+      border: 1px solid #434348;
+    }
   }
   &--theme_transparent {
     border: 1px solid #434348;
     margin-left: 20px;
+    &:hover {
+      background: $blue;
+      border: none;
+    }
   }
   &:hover {
     color: #fff;
+    transition: background .3s;
   }
 }
 
@@ -146,6 +160,7 @@ section.intro {
       &__title {
         color: #fff;
         font-size: 48px;
+        font-weight: 600;
         margin: 15px 0 26px;
         letter-spacing: 0.7px;
         line-height: 1;
@@ -529,6 +544,7 @@ footer.footer {
       margin-left: 30px;
       margin-bottom: 15px;
       &-item {
+        color: transparent;
         .social-icon {
           width: 20px;
           margin: 0 13px;

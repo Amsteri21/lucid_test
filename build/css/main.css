@@ -5882,6 +5882,9 @@ textarea {
 input {
   height: 50px; }
 
+textarea {
+  resize: none; }
+
 .container {
   padding: 0; }
 
@@ -5926,14 +5929,24 @@ input {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-transition: background .3s;
+  transition: background .3s; }
   .btn--theme_blue {
     background: #008ed6; }
+    .btn--theme_blue:hover {
+      background: transparent;
+      border: 1px solid #434348; }
   .btn--theme_transparent {
     border: 1px solid #434348;
     margin-left: 20px; }
+    .btn--theme_transparent:hover {
+      background: #008ed6;
+      border: none; }
   .btn:hover {
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: background .3s;
+    transition: background .3s; }
 
 header .header__container .row {
   display: -webkit-box;
@@ -6005,6 +6018,7 @@ section.intro {
     section.intro .intro__container .intro__title {
       color: #fff;
       font-size: 48px;
+      font-weight: 600;
       margin: 15px 0 26px;
       letter-spacing: 0.7px;
       line-height: 1; }
@@ -6355,15 +6369,17 @@ footer.footer {
   footer.footer .container__footer .footer__social {
     margin-left: 30px;
     margin-bottom: 15px; }
-    footer.footer .container__footer .footer__social-item .social-icon {
-      width: 20px;
-      margin: 0 13px; }
-      footer.footer .container__footer .footer__social-item .social-icon.hover {
+    footer.footer .container__footer .footer__social-item {
+      color: transparent; }
+      footer.footer .container__footer .footer__social-item .social-icon {
+        width: 20px;
+        margin: 0 13px; }
+        footer.footer .container__footer .footer__social-item .social-icon.hover {
+          display: none; }
+      footer.footer .container__footer .footer__social-item:hover .social-icon {
         display: none; }
-    footer.footer .container__footer .footer__social-item:hover .social-icon {
-      display: none; }
-      footer.footer .container__footer .footer__social-item:hover .social-icon.hover {
-        display: inherit; }
+        footer.footer .container__footer .footer__social-item:hover .social-icon.hover {
+          display: inherit; }
 
 @media screen and (max-width: 767px) {
   body.open-menu {
