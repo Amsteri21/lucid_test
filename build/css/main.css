@@ -6374,11 +6374,13 @@ footer.footer {
   header.header .header__container .row {
     height: 60px;
     position: unset; }
-    header.header .header__container .row .col-sm-10 {
+    header.header .header__container .row .header__logo {
+      margin-bottom: 0px; }
+    header.header .header__container .row .col-lg-10 {
       position: unset; }
-      header.header .header__container .row .col-sm-10 .header__nav {
+      header.header .header__container .row .col-lg-10 .header__nav {
         display: none; }
-        header.header .header__container .row .col-sm-10 .header__nav.active {
+        header.header .header__container .row .col-lg-10 .header__nav.active {
           display: block;
           position: absolute;
           left: 0;
@@ -6387,15 +6389,15 @@ footer.footer {
           z-index: 1;
           height: calc(100vh - 60px);
           width: 100vw; }
-          header.header .header__container .row .col-sm-10 .header__nav.active .nav__list {
+          header.header .header__container .row .col-lg-10 .header__nav.active .nav__list {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column; }
-            header.header .header__container .row .col-sm-10 .header__nav.active .nav__list .nav__item {
+            header.header .header__container .row .col-lg-10 .header__nav.active .nav__list .nav__item {
               padding: 15px;
               text-align: center; }
-              header.header .header__container .row .col-sm-10 .header__nav.active .nav__list .nav__item .nav__link {
+              header.header .header__container .row .col-lg-10 .header__nav.active .nav__list .nav__item .nav__link {
                 font-size: 26px; }
     header.header .header__container .row .header__toggle {
       display: block;
@@ -6449,17 +6451,17 @@ footer.footer {
           width: 100%; }
       section.features .features__container .row .features__btns .btn--theme_transparent {
         margin-left: 0; }
-  section.contact .contact__container .contact__form {
+  section.contact .contact__container .form__wrapper .contact__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto; }
-    section.contact .contact__container .contact__form > div {
+    section.contact .contact__container .form__wrapper .contact__form > div {
       padding: 15px; }
-      section.contact .contact__container .contact__form > div textarea {
+      section.contact .contact__container .form__wrapper .contact__form > div textarea {
         margin: 0 auto 15px; }
-      section.contact .contact__container .contact__form > div .submit {
+      section.contact .contact__container .form__wrapper .contact__form > div .submit {
         margin: 0 auto; }
   section.price .price__list > div {
     margin-top: 15px; } }

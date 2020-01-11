@@ -13,7 +13,10 @@
       .row {
         height: 60px;
         position: unset;
-        .col-sm-10 {
+        .header__logo {
+          margin-bottom: 0px;
+        }
+        .col-lg-10 {
           position: unset;
           .header__nav {
             display: none;
@@ -118,16 +121,18 @@
 
   section.contact {
     .contact__container {
-      .contact__form {
-        flex-direction: column;
-        height: auto;
-        & > div {
-          padding: 15px;
-          textarea {
-            margin: 0 auto 15px;
-          }
-          .submit {
-            margin: 0 auto;
+      .form__wrapper {
+        .contact__form {
+          flex-direction: column;
+          height: auto;
+          & > div {
+            padding: 15px;
+            textarea {
+              margin: 0 auto 15px;
+            }
+            .submit {
+              margin: 0 auto;
+            }
           }
         }
       }
